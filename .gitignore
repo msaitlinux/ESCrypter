@@ -1,0 +1,17 @@
+/target/
+/build/
+/build-gui/
+/dist/
+/test-results/
+__pycache__/
+*.py[cod]
+*.deb
+*.esc
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+*.swp
+*~
+.DS_Store
