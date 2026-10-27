@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "package": "escrypter-core_0.2.0_amd64.deb",
+      "bytes": 5129974,
+      "sha256": "4e938141899282886b8ef933f749d14077ebe6755c9df006a9f1e3037e4a2de9",
+      "files": 12,
+      "dynamic_dependencies_resolved": true
+    },
+    {
+      "package": "escrypter_0.2.0_amd64.deb",
+      "bytes": 490880,
+      "sha256": "455b7fdcbec05581c3a3ce28e71a8ed45a117b95b7b8989ab4bd4c24a6670530",
+      "files": 13,
+      "dynamic_dependencies_resolved": true
+    }
+  ],
+  "overlapping_regular_files": [],
+  "clean_os_install_tested": false
+}

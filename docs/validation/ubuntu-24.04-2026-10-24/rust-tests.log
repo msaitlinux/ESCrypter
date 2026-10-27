@@ -1,0 +1,39 @@
+    Finished test [unoptimized + debuginfo] target(s) in 0.01s
+     Running unittests src/lib.rs (/tmp/escrypter-build/debug/deps/escrypter-7713b374bb5e3964)
+
+running 14 tests
+test ecp::tests::confinement_and_methods ... ok
+test ecp::tests::job_replay_is_bound_to_request ... ok
+test ecp::tests::frames_roundtrip_and_limits ... ok
+test ecp::tests::deterministic_frame_mutations_do_not_panic ... ok
+test tests::crypto_authentication ... ok
+test tests::secretstream_final_and_mac ... ok
+test tests::bounded_xml ... ok
+test ecp::tests::upload_collision_quota_and_identity ... ok
+test ecp::tests::finalize_changed_destination_rejected ... ok
+test ecp::tests::finalize_restart_recovery ... ok
+test ecp::tests::empty_upload_and_private_permissions ... ok
+test ecp::tests::resume_and_receipt_signature ... ok
+test tests::signed_but_bad_cipher_rejected ... ok
+test ecp::tests::event_ring_gap_and_pagination ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.13s
+
+     Running unittests src/main.rs (/tmp/escrypter-build/debug/deps/escrypter-9cca3090b4eb8c23)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/escrypter-agent.rs (/tmp/escrypter-build/debug/deps/escrypter_agent-35f810dfdcb280c9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests escrypter
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,23 @@
+test_01_layout (__main__.Tests.test_01_layout) ... ok
+test_02_roundtrip (__main__.Tests.test_02_roundtrip) ... ok
+test_03_wrong_password (__main__.Tests.test_03_wrong_password) ... ok
+test_04_recovery (__main__.Tests.test_04_recovery) ... ok
+test_05_tamper_missing_duplicates_paths (__main__.Tests.test_05_tamper_missing_duplicates_paths) ... ok
+test_06_trust (__main__.Tests.test_06_trust) ... ok
+test_07_rekey (__main__.Tests.test_07_rekey) ... ok
+test_08_overwrite (__main__.Tests.test_08_overwrite) ... ok
+test_09_symlink (__main__.Tests.test_09_symlink) ... ok
+test_10_multichunk (__main__.Tests.test_10_multichunk) ... ok
+test_11_trailing_payload (__main__.Tests.test_11_trailing_payload) ... ok
+test_12_cancellation (__main__.Tests.test_12_cancellation) ... ok
+test_13_content_preview_events (__main__.Tests.test_13_content_preview_events) ... ok
+test_14_signing_key_password_and_export (__main__.Tests.test_14_signing_key_password_and_export) ... ok
+test_15_package_info_without_password (__main__.Tests.test_15_package_info_without_password) ... ok
+test_16_oversized_password_and_metadata (__main__.Tests.test_16_oversized_password_and_metadata) ... ok
+test_17_output_permissions (__main__.Tests.test_17_output_permissions) ... ok
+test_18_invalid_cli_rejected (__main__.Tests.test_18_invalid_cli_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.958s
+
+OK

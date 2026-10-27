@@ -1,0 +1,19 @@
+[Unit]
+Description=ESCrypter per-user ECP job agent
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/escrypter-agent --serve
+Restart=on-failure
+RestartSec=5
+RuntimeDirectory=escrypter
+RuntimeDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+LimitCORE=0
+KillMode=control-group
+TimeoutStopSec=60
+
+[Install]
+WantedBy=default.target

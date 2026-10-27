@@ -1,0 +1,16 @@
+[  0%] Built target escrypter-gui_autogen_timestamp_deps
+[  0%] Built target escrypter-gui-tests_autogen_timestamp_deps
+[  4%] Automatic MOC for target escrypter-gui-tests
+[  9%] Automatic MOC for target escrypter-gui
+[  9%] Built target escrypter-gui_autogen
+[  9%] Built target escrypter-gui-tests_autogen
+[ 13%] Automatic RCC for resources.qrc
+[ 18%] Building CXX object CMakeFiles/escrypter-gui-tests.dir/window.cpp.o
+[ 22%] Building CXX object CMakeFiles/escrypter-gui-tests.dir/escrypter-gui-tests_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[ 27%] Linking CXX executable escrypter-gui-tests
+[ 54%] Built target escrypter-gui-tests
+[ 59%] Automatic RCC for resources.qrc
+[ 63%] Building CXX object CMakeFiles/escrypter-gui.dir/window.cpp.o
+[ 68%] Building CXX object CMakeFiles/escrypter-gui.dir/escrypter-gui_autogen/EWIEGA46WW/qrc_resources.cpp.o
+[ 72%] Linking CXX executable escrypter-gui
+[100%] Built target escrypter-gui

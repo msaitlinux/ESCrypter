@@ -1,0 +1,10 @@
+<RCC><qresource prefix="/">
+<file alias="icons/locked.svg">icons/locked.svg</file>
+<file alias="icons/unlocked.svg">icons/unlocked.svg</file>
+<file alias="icons/verified.svg">icons/verified.svg</file>
+<file alias="icons/key.svg">icons/key.svg</file>
+<file alias="icons/warning.svg">icons/warning.svg</file>
+<file alias="licenses/catalog.json">../licenses/catalog.json</file>
+<file alias="docs/README_TR.md">../README_TR.md</file>
+<file alias="docs/README.md">../README.md</file>
+</qresource></RCC>

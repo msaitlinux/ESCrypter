@@ -1,0 +1,31 @@
+ESCrypter 0.1.0 validation — 2026-10-24
+Environment: Ubuntu 24.04.3 amd64; Rust 1.75; Qt 6.4.2; libsodium 1.0.18.
+
+cargo build --offline --release: PASS
+CMake Qt6 GUI build: PASS
+QT_QPA_PLATFORM=offscreen GUI launch/smoke test: PASS
+GUI screenshot inspected: Turkish text, controls and layout visible, no clipping.
+
+Rust unit tests: 4 PASS
+- bounded canonical XML parser rejects entities/DTD/duplicate fields
+- AEAD rejects wrong associated data and modified ciphertext
+- secretstream authenticates records and final tag
+- correctly re-signed but corrupted encrypted data rejected; no output published
+
+Python integration tests: 12 PASS
+- >=4 MB package; 100 unique codes; 10 folders x 10 parts
+- Turkish names/content, empty directories/files round trip
+- wrong password rejected; no output published
+- independent recovery key round trip
+- modified/missing/duplicate/unsafe outer member rejected
+- trusted fingerprint matching/mismatch
+- password change, old password rejection on new package, valid signature
+- output overwrite refusal
+- source symlink rejection
+- 5,000,000 bytes random incompressible data round trip (SHA-256 comparison)
+- unsigned trailing payload rejected
+- SIGTERM cancellation leaves no final output or temporary work directory
+
+Not tested: actual Debian 13 installation/desktop session, ARM64, TB-scale inputs,
+GUI click-through of every modal dialog, sudden power failure, adversarial
+concurrent mutation of source directories. No independent security audit.

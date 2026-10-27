@@ -1,0 +1,16 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libqt6qml6 libqt6qmlmodels6 libqt6quick6 libqt6waylandclient6
+  libqt6waylandcompositor6 libqt6waylandeglclienthwintegration6
+  libqt6waylandeglcompositorhwintegration6 libqt6wlshellintegration6
+  libwayland-server0 qt6-wayland
+Suggested packages:
+  qt6-qmltooling-plugins
+The following NEW packages will be installed:
+  escrypter escrypter-core libqt6qml6 libqt6qmlmodels6 libqt6quick6
+  libqt6waylandclient6 libqt6waylandcompositor6
+  libqt6waylandeglclienthwintegration6
+  libqt6waylandeglcompositorhwintegration6 libqt6wlshellintegration6
+  libwayland-server0 qt6-wayland

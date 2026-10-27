@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=ESCrypter
+Comment=Encrypt and sign file packages
+Comment[tr]=Dosyaları şifrele ve imzala
+Exec=escrypter-gui --open %f
+Icon=escrypter
+Terminal=false
+Categories=Utility;Security;
+MimeType=application/x-escrypter;

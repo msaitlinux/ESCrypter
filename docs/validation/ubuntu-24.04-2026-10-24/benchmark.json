@@ -1,0 +1,77 @@
+{
+  "note": "Single-run local samples; 1 GiB worker virtual memory limit. RSS omitted because process namespace visibility is unreliable in the execution environment.",
+  "results": [
+    {
+      "input": "repetitive-32MiB",
+      "input_bytes": 33554432,
+      "profile": "fast",
+      "archive_bytes": 4108800,
+      "encrypt": {
+        "seconds": 0.359
+      },
+      "decrypt": {
+        "seconds": 0.154
+      }
+    },
+    {
+      "input": "repetitive-32MiB",
+      "input_bytes": 33554432,
+      "profile": "balanced",
+      "archive_bytes": 4108800,
+      "encrypt": {
+        "seconds": 0.665
+      },
+      "decrypt": {
+        "seconds": 0.154
+      }
+    },
+    {
+      "input": "repetitive-32MiB",
+      "input_bytes": 33554432,
+      "profile": "high",
+      "archive_bytes": 4108800,
+      "encrypt": {
+        "seconds": 0.725
+      },
+      "decrypt": {
+        "seconds": 0.153
+      }
+    },
+    {
+      "input": "random-8MiB",
+      "input_bytes": 8388608,
+      "profile": "fast",
+      "archive_bytes": 8460800,
+      "encrypt": {
+        "seconds": 1.738
+      },
+      "decrypt": {
+        "seconds": 0.144
+      }
+    },
+    {
+      "input": "random-8MiB",
+      "input_bytes": 8388608,
+      "profile": "balanced",
+      "archive_bytes": 8460800,
+      "encrypt": {
+        "seconds": 3.525
+      },
+      "decrypt": {
+        "seconds": 0.144
+      }
+    },
+    {
+      "input": "random-8MiB",
+      "input_bytes": 8388608,
+      "profile": "high",
+      "archive_bytes": 8460800,
+      "encrypt": {
+        "seconds": 2.892
+      },
+      "decrypt": {
+        "seconds": 0.154
+      }
+    }
+  ]
+}
