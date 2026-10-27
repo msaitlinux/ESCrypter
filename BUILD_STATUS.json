@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "stage": "debugged_development_candidate",
+  "compiled": true,
+  "debugged": true,
+  "tests_run": true,
+  "binary_included": false,
+  "build_platform": "Ubuntu 24.04.3 amd64",
+  "target_platform": "Debian 13 (not validated)",
+  "rust_unit_tests_passed": 14,
+  "cli_integration_tests_passed": 18,
+  "gui_smoke_passed": true,
+  "benchmark_roundtrips_passed": 6,
+  "ecp_socket_tests": "unavailable: Unix socket bind prohibited",
+  "ssh_sftp_end_to_end_tested": false,
+  "debian13_install_tested": false,
+  "independent_security_audit": false,
+  "report": "docs/DEBUG_REPORT_TR.md",
+  "distribution": "GitHub source bundle",
+  "github_workflows_executed": false
+}
