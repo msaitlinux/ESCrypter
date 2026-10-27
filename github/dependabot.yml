@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+# Cargo uses vendored sources. Review and update source snapshots, Cargo.lock and
+# license notices together; a lockfile-only dependency bot update is insufficient.

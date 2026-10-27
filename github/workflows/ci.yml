@@ -1,0 +1,65 @@
+name: Build and test
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - image: "ubuntu:24.04"
+            label: ubuntu-24.04
+          - image: "debian:13"
+            label: debian-13
+    container:
+      image: ${{ matrix.image }}
+    timeout-minutes: 30
+    env:
+      DEBIAN_FRONTEND: noninteractive
+      CARGO_BUILD_JOBS: "2"
+    steps:
+      - name: Install build dependencies
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends ca-certificates git build-essential cargo rustc rustfmt cmake pkg-config python3 qt6-base-dev qt6-svg-dev libsodium-dev liblzma-dev libcurl4-openssl-dev openssh-client wget systemd
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Build and run checks
+        shell: bash
+        run: bash tests/run-checks.sh
+      - name: Run ECP socket integration tests
+        shell: bash
+        run: python3 tests/ecp_integration.py target/release
+      - name: Build combined Debian package
+        shell: bash
+        run: |
+          bash package-single-deb.sh --no-build
+          cd dist
+          sha256sum ESCrypter_*.deb > SHA256SUMS
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: checks-${{ matrix.label }}
+          path: test-results/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload installable package
+        uses: actions/upload-artifact@v7
+        with:
+          name: package-${{ matrix.label }}
+          path: |
+            dist/ESCrypter_*.deb
+            dist/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 14
